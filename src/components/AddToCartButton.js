@@ -1,16 +1,22 @@
 import React from 'react';
 import styled from 'styled-components';
 import { sizes, colors } from '../common/constants/constants';
+
+import { FaCartPlus } from 'react-icons/fa';
+
 const StyledButton = styled.button`
+  display: flex;
+  align-items: center;
+  justify-content: center;
   background-color: ${colors.primaryOrange};
   padding: 10px 15px;
   color: ${colors.white};
   font-size: ${sizes.small};
   border: none;
-  border-radius: 4px;
+  border-radius: 0.5rem;
   cursor: pointer;
-  width: 15rem;
-  height: 3.3rem;
+  width: 18rem;
+  height: 3.7rem;
   transition: background-color 0.3s ease;
 
   &:hover {
@@ -19,8 +25,19 @@ const StyledButton = styled.button`
   }
 `;
 
+const IconWrapper = styled.span`
+  margin-right: 8px;
+`;
+
 const AddToCartButton = () => {
-  return <StyledButton>Add to Cart</StyledButton>;
+  return (
+    <StyledButton>
+      <IconWrapper>
+        <FaCartPlus />
+      </IconWrapper>
+      Add to Cart
+    </StyledButton>
+  );
 };
 
 export default AddToCartButton;

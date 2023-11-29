@@ -10,9 +10,11 @@ export const colors = {
 };
 
 export const sizes = {
+  extraSmall: '1.5rem',
   small: '1.7rem',
   medium: '1.5rem',
-  large: '5rem',
+  large: '2.5rem',
+  extraLarge: '3.8rem',
 };
 
 export const fontWeight = {

@@ -6,18 +6,18 @@ import {
   RightContainer,
   Heading1Container,
   BodyContainer,
+  PriceContainer,
+  ButtonContainer,
 } from './Product.styled';
 import { Text } from '../common/Text/Text';
 import AddToCartButton from '../components/AddToCartButton';
 export const Product = () => {
   return (
     <Container>
-      <LeftContainer>
-        <AddToCartButton>Add to Cart</AddToCartButton>
-      </LeftContainer>
+      <LeftContainer></LeftContainer>
       <RightContainer>
         <Heading1Container>
-          <Text variant="Heading1">Sneaker Company</Text>
+          <Text variant="title">Sneaker Company</Text>
         </Heading1Container>
 
         <HeadlineContainer>
@@ -32,7 +32,16 @@ export const Product = () => {
           </Text>
         </BodyContainer>
 
-        <AddToCartButton>Add to Cart</AddToCartButton>
+        <PriceContainer>
+          <Text variant="Heading1">$125</Text>
+          <Text strikethrough variant="body">
+            $250
+          </Text>
+        </PriceContainer>
+
+        <ButtonContainer>
+          <AddToCartButton />
+        </ButtonContainer>
       </RightContainer>
     </Container>
   );

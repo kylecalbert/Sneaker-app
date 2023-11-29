@@ -25,16 +25,27 @@ export const RightContainer = styled.div`
 `;
 
 export const Heading1Container = styled.div`
-  margin-bottom: 2rem;
+  margin-bottom: 1rem;
 `;
 
 export const HeadlineContainer = styled.div`
   margin-bottom: 2rem;
+  max-width: 50%;
 `;
 
 export const BodyContainer = styled.div`
-  background-color: blue;
-  max-width: 60%;
+  /* background-color: blue; */
+  max-width: 55%;
 `;
 
-export const ButtonContainer = styled.div``;
+export const PriceContainer = styled.div`
+  display: flex;
+  flex-direction: column;
+  margin-top: 2rem;
+`;
+
+export const ButtonContainer = styled.div`
+  display: flex;
+  flex-direction: column;
+  margin-top: 2rem;
+`;

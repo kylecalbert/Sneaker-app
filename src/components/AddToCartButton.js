@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import { sizes, colors } from '../common/constants/constants';
-
+import { Text } from '../common/Text/Text';
 import { FaCartPlus } from 'react-icons/fa';
 
 const StyledButton = styled.button`
@@ -35,7 +35,8 @@ const AddToCartButton = () => {
       <IconWrapper>
         <FaCartPlus />
       </IconWrapper>
-      Add to Cart
+
+      <Text> Add to Cart</Text>
     </StyledButton>
   );
 };

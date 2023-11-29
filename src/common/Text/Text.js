@@ -5,25 +5,26 @@ import { colors, fontWeight, sizes } from '../constants/constants';
 
 const textStyles = {
   body: {
-    fontSize: sizes.small,
+    fontSize: sizes.extraSmall,
     color: colors.darkGrayishBlue,
   },
   Headline: {
-    fontSize: sizes.large,
+    fontSize: sizes.extraLarge,
     fontWeight: fontWeight.bold,
     color: fontWeight.black,
   },
   title: {
     fontSize: sizes.medium,
     fontWeight: fontWeight.bold,
-  },
-  Heading1: {
-    fontSize: sizes.medium,
-    fontWeight: fontWeight.bold,
     color: colors.primaryOrange,
   },
+  Heading1: {
+    fontSize: sizes.large,
+    fontWeight: fontWeight.bold,
+  },
+
   buttonText: {
-    fontSize: sizes.small,
+    fontSize: sizes.extraSmall,
     fontWeight: fontWeight.bold,
   },
 };
@@ -34,11 +35,13 @@ const StyledText = styled.div`
   font-weight: ${(props) => textStyles[props.variant]?.fontWeight || 'normal'};
   margin: ${(props) => props.margin || '0'};
   padding: ${(props) => props.padding || '0'};
+  text-decoration: ${(props) =>
+    props.strikethrough ? 'line-through' : 'none'};
 `;
 
-export const Text = ({ variant, children, ...props }) => {
+export const Text = ({ variant, strikethrough, children, ...props }) => {
   return (
-    <StyledText variant={variant} {...props}>
+    <StyledText variant={variant} strikethrough={strikethrough} {...props}>
       {children}
     </StyledText>
   );

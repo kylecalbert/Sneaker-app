@@ -1,4 +1,3 @@
-import logo from './logo.svg';
 import './App.css';
 import { Product } from './Pages/Product';
 import { AppContainer } from './App.styled';

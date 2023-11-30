@@ -1,23 +1,27 @@
 import React from 'react';
+
 import {
   Container,
-  HeadlineContainer,
+  ProductInfoContainer,
   LeftContainer,
   RightContainer,
   Heading1Container,
+  HeadlineContainer,
   BodyContainer,
   PriceContainer,
   ButtonContainer,
-  ProductInfoContainer,
 } from './Product.styled';
 import { Text } from '../common/Text/Text';
 import AddToCartButton from '../components/AddToCartButton';
 import Incrementor from '../components/Incrementor';
 import { DiscountTag } from '../components/DiscountTag';
+import ProductGallery from '../components/ProductGallery';
 export const Product = () => {
   return (
     <Container>
-      <LeftContainer>Left component</LeftContainer>
+      <LeftContainer>
+        <ProductGallery />
+      </LeftContainer>
       <RightContainer>
         <ProductInfoContainer>
           <Heading1Container>

@@ -47,8 +47,11 @@ export const BodyContainer = styled.div`
 
 export const PriceContainer = styled.div`
   display: flex;
-  flex-direction: column;
+
   margin-top: 2rem;
+  /* background-color: red; */
+  align-items: center;
+  margin-bottom: 1rem;
 `;
 
 export const ButtonContainer = styled.div`

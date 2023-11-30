@@ -1,6 +1,5 @@
 import styled from 'styled-components';
 import { colors, sizes } from '../common/constants/constants';
-import { textStyles } from '../common/Text/Text';
 export const StyledButton = styled.button`
   display: flex;
   align-items: center;

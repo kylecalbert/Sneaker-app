@@ -1,6 +1,6 @@
 import './App.css';
-import { Product } from './Pages/Product';
 import { AppContainer } from './App.styled';
+import { Product } from './pages/Product';
 function App() {
   return (
     <AppContainer>

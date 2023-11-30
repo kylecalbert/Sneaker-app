@@ -3,12 +3,12 @@ import styled from 'styled-components';
 
 import { colors, fontWeight, sizes } from '../constants/constants';
 
-const textStyles = {
+export const textStyles = {
   body: {
     fontSize: sizes.extraSmall,
     color: colors.darkGrayishBlue,
   },
-  Headline: {
+  headline: {
     fontSize: sizes.extraLarge,
     fontWeight: fontWeight.bold,
     color: fontWeight.black,
@@ -18,7 +18,7 @@ const textStyles = {
     fontWeight: fontWeight.bold,
     color: colors.primaryOrange,
   },
-  Heading1: {
+  heading1: {
     fontSize: sizes.large,
     fontWeight: fontWeight.bold,
   },
@@ -26,6 +26,7 @@ const textStyles = {
   buttonText: {
     fontSize: sizes.extraSmall,
     fontWeight: fontWeight.bold,
+    color: colors.white,
   },
 };
 

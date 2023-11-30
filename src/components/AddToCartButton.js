@@ -10,7 +10,7 @@ const AddToCartButton = () => {
         <FaCartPlus />
       </IconWrapper>
 
-      <Text> Add to Cart</Text>
+      <Text variant="buttonText"> Add to Cart</Text>
     </StyledButton>
   );
 };

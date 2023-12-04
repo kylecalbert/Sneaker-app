@@ -14,10 +14,13 @@ import { Text } from '../common/Text/Text';
 import AddToCartButton from '../components/AddToCartButton';
 import Incrementor from '../components/Incrementor';
 import { DiscountTag } from '../components/DiscountTag';
+import { Gallery } from './Gallery';
 export const Product = () => {
   return (
     <Container>
-      <LeftContainer>Left component</LeftContainer>
+      <LeftContainer>
+        <Gallery />
+      </LeftContainer>
       <RightContainer>
         <ProductInfoContainer>
           <Heading1Container>

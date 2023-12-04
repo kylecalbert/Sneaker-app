@@ -10,7 +10,12 @@ export const Container = styled.div`
 `;
 
 export const LeftContainer = styled.div`
-  background-color: purple;
+  display: flex;
+
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  /* background-color: purple; */
   width: 50%;
 `;
 

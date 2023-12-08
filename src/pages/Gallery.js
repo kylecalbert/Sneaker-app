@@ -7,13 +7,13 @@ import product1image from '../images/image-product-1.jpg';
 import product2image from '../images/image-product-2.jpg';
 import product3image from '../images/image-product-3.jpg';
 import product4image from '../images/image-product-4.jpg';
-import { IoMdArrowDropright } from 'react-icons/io';
+import { IoMdArrowDropright, IoMdArrowDropleft } from 'react-icons/io';
 
 import {
   ImageGalleryContainer,
   FullWidthItem,
   GridItem,
-  MobileControls,
+  LeftButton,
   RightButton,
 } from './Gallery.styled';
 
@@ -41,6 +41,9 @@ export const Gallery = () => {
           <RightButton>
             <IoMdArrowDropright />
           </RightButton>
+          <LeftButton>
+            <IoMdArrowDropleft />
+          </LeftButton>
         </FullWidthItem>
       )}
 

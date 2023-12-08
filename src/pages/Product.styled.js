@@ -17,11 +17,13 @@ export const LeftContainer = styled.div`
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  /* background-color: purple; */
+  background-color: purple;
   width: 50%;
   @media (max-width: 768px) {
     width: 100%;
+    height: 50%;
   }
+  background-color: green;
 `;
 
 export const RightContainer = styled.div`
@@ -36,12 +38,21 @@ export const RightContainer = styled.div`
   @media (max-width: 768px) {
     width: 100%;
     margin-left: 0;
+    height: 50%;
   }
+  background-color: blue;
 `;
 
 export const ProductInfoContainer = styled.div`
-  /* background-color: green; */
+  background-color: yellow;
   width: 70%;
+  @media (max-width: 768px) {
+    margin-left: 0.5rem;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+  }
 `;
 
 export const Heading1Container = styled.div`
@@ -75,4 +86,10 @@ export const ButtonContainer = styled.div`
   display: flex;
   width: 100%;
   margin-top: 2rem;
+
+  @media (max-width: 768px) {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
 `;

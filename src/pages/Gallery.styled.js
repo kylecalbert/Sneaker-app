@@ -7,6 +7,9 @@ export const ImageGalleryContainer = styled.div`
   width: 50%;
   background-color: blue;
 
+  @media (max-width: 1024px) {
+  }
+
   @media (max-width: 768px) {
     width: 100%;
   }
@@ -69,6 +72,29 @@ export const RightButton = styled.button`
     position: absolute;
     top: 50%;
     right: 0.3rem;
+    transform: translateY(-50%);
+    font-size: 2rem;
+    cursor: pointer;
+    color: black;
+    text-decoration: none;
+    background-color: none;
+    border-radius: 100%;
+    padding: 0.2rem;
+    border: none;
+  }
+  @media (min-width: 768px) {
+    display: none;
+  }
+`;
+
+export const LeftButton = styled.button`
+  @media (max-width: 768px) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 50%;
+    left: 0.3rem;
     transform: translateY(-50%);
     font-size: 2rem;
     cursor: pointer;

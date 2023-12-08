@@ -1,12 +1,14 @@
 import styled from 'styled-components';
 
 export const Container = styled.div`
-  display: grid;
   /* background-color: red; */
   width: 100%;
   display: flex;
 
   height: 100%;
+  @media (max-width: 768px) {
+    flex-direction: column;
+  }
 `;
 
 export const LeftContainer = styled.div`
@@ -17,6 +19,9 @@ export const LeftContainer = styled.div`
   flex-direction: column;
   /* background-color: purple; */
   width: 50%;
+  @media (max-width: 768px) {
+    width: 100%;
+  }
 `;
 
 export const RightContainer = styled.div`
@@ -28,7 +33,10 @@ export const RightContainer = styled.div`
   background-color: white;
   width: 50%;
   display: flex;
-  /* background-color: red; */
+  @media (max-width: 768px) {
+    width: 100%;
+    margin-left: 0;
+  }
 `;
 
 export const ProductInfoContainer = styled.div`

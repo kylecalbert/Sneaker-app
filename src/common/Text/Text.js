@@ -7,7 +7,7 @@ export const textStyles = {
   body: {
     fontSize: sizes.extraSmall,
     color: colors.darkGrayishBlue,
-    mobileFontSize: sizes.smallMobile, // Add mobile font size
+    mobileFontSize: sizes.smallMobile,
   },
   headline: {
     fontSize: sizes.extraLarge,
@@ -43,7 +43,7 @@ const StyledText = styled.div`
   text-decoration: ${(props) =>
     props.strikethrough ? 'line-through' : 'none'};
 
-  @media (max-width: 768px) {
+  @media (max-width: 968px) {
     font-size: ${(props) =>
       textStyles[props.variant]?.mobileFontSize || '1rem'};
   }

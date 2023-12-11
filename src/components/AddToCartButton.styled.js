@@ -21,6 +21,13 @@ export const StyledButton = styled.button`
     background-color: ${colors.paleOrange};
     color: black;
   }
+
+  @media (max-width: 768px) {
+    height: 4rem;
+    width: 22rem;
+    margin-top: 1rem;
+    margin-left: 0;
+  }
 `;
 
 export const IconWrapper = styled.span`

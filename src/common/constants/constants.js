@@ -14,7 +14,7 @@ export const sizes = {
   medium: '1.5rem',
   large: '2.5rem',
   extraLarge: '3.8rem',
-  smallMobile: '2rem',
+  smallMobile: '1rem',
   mediumMobile: '1.3rem',
   largeMobile: '1.8rem',
 };

@@ -10,11 +10,13 @@ import {
   ButtonContainer,
   ProductInfoContainer,
 } from './Product.styled';
-import { Text } from '../common/Text/Text';
+
+import { Text } from '../components/Text/Text';
 import AddToCartButton from '../components/AddToCartButton';
 import Incrementor from '../components/Incrementor';
 import { DiscountTag } from '../components/DiscountTag';
-import { Gallery } from './Gallery';
+
+import { Gallery } from '../components/Gallery';
 export const Product = () => {
   return (
     <Container>

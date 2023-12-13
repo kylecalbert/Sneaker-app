@@ -1,8 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 
-import { colors, fontWeight, sizes } from '../constants/constants';
-
+import { colors, fontWeight, sizes } from '../../common/constants/constants';
 export const textStyles = {
   body: {
     fontSize: sizes.extraSmall,

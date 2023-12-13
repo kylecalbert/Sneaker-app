@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
-import { Text } from '../common/Text/Text';
-
+import { Text } from './Text/Text';
 import { IncrementorContainer, Button, Value } from './Incrementor.styled';
 
 export const Incrementor = () => {

@@ -12,6 +12,12 @@ export const IncrementorContainer = styled.div`
     height: 4rem;
     width: 22rem;
   }
+  @media (max-width: 667px) {
+    height: 3rem;
+    width: 14rem;
+    margin-top: 1rem;
+    margin-left: 0;
+  }
 `;
 
 export const Button = styled.button`

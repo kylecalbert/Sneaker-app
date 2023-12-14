@@ -51,8 +51,11 @@ export const RightContainer = styled.div`
 `;
 
 export const ProductInfoContainer = styled.div`
-  /* background-color: yellow; */
+  background-color: yellow;
   width: 70%;
+  @media (max-width: 968px) {
+    width: 100%;
+  }
   @media (max-width: 512px) {
     margin-left: 0.9rem;
     width: 100%;
@@ -106,7 +109,7 @@ export const ButtonContainer = styled.div`
   width: 100%;
   margin-top: 1rem;
 
-  @media (max-width: 900px) {
+  @media (max-width: 915px) {
     width: 100%;
   }
 

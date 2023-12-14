@@ -28,6 +28,13 @@ export const StyledButton = styled.button`
     margin-top: 1rem;
     margin-left: 0;
   }
+
+  @media (max-width: 667px) {
+    height: 3rem;
+    width: 14rem;
+    margin-top: 1rem;
+    margin-left: 0;
+  }
 `;
 
 export const IconWrapper = styled.span`

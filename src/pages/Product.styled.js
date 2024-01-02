@@ -17,7 +17,7 @@ export const LeftContainer = styled.div`
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  background-color: purple;
+  /* background-color: purple; */
   width: 50%;
   @media (max-width: 1024px) {
     height: 100%;
@@ -26,9 +26,7 @@ export const LeftContainer = styled.div`
     width: 100%;
     height: 30%;
   }
-  background-color: green;
-
-  background-color: green;
+  /* background-color: green; */
 `;
 
 export const RightContainer = styled.div`
@@ -47,11 +45,10 @@ export const RightContainer = styled.div`
     height: 60%;
     margin-top: 5rem;
   }
-  background-color: blue;
+  /* background-color: blue; */
 `;
 
 export const ProductInfoContainer = styled.div`
-  background-color: yellow;
   width: 70%;
   @media (max-width: 968px) {
     width: 100%;
@@ -102,7 +99,7 @@ export const PriceContainer = styled.div`
 
 export const ButtonContainer = styled.div`
   display: flex;
-  background-color: purple;
+  /* background-color: purple; */
   justify-content: flex-start;
 
   display: flex;

@@ -5,7 +5,6 @@ export const ImageGalleryContainer = styled.div`
   display: grid;
   grid-gap: 1rem;
   width: 50%;
-  background-color: blue;
 
   @media (max-width: 1024px) {
   }
@@ -16,7 +15,6 @@ export const ImageGalleryContainer = styled.div`
 `;
 
 export const FullWidthItem = styled.div`
-  background-color: green;
   grid-column: span 4;
   grid-row: span 1;
   height: 100%;

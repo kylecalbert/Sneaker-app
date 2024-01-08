@@ -1,32 +1,35 @@
 import React from 'react';
 import styled from 'styled-components';
 
-import { colors, fontWeight, sizes } from '../constants/constants';
-
+import { colors, fontWeight, sizes } from '../../common/constants/constants';
 export const textStyles = {
   body: {
     fontSize: sizes.extraSmall,
     color: colors.darkGrayishBlue,
+    mobileFontSize: sizes.smallMobile,
   },
   headline: {
     fontSize: sizes.extraLarge,
     fontWeight: fontWeight.bold,
-    color: fontWeight.black,
+    color: colors.black,
+    mobileFontSize: sizes.largeMobile,
   },
   title: {
     fontSize: sizes.medium,
     fontWeight: fontWeight.bold,
     color: colors.primaryOrange,
+    mobileFontSize: sizes.mediumMobile,
   },
   heading1: {
     fontSize: sizes.large,
     fontWeight: fontWeight.bold,
+    mobileFontSize: sizes.largeMobile,
   },
-
   buttonText: {
     fontSize: sizes.extraSmall,
     fontWeight: fontWeight.bold,
     color: colors.white,
+    mobileFontSize: sizes.smallMobile,
   },
 };
 
@@ -38,6 +41,11 @@ const StyledText = styled.div`
   padding: ${(props) => props.padding || '0'};
   text-decoration: ${(props) =>
     props.strikethrough ? 'line-through' : 'none'};
+
+  @media (max-width: 968px) {
+    font-size: ${(props) =>
+      textStyles[props.variant]?.mobileFontSize || '1rem'};
+  }
 `;
 
 export const Text = ({ variant, strikethrough, children, ...props }) => {

@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import { Text } from '../common/Text/Text';
+import { Text } from './Text/Text';
 import { colors } from '../common/constants/constants';
 export const DiscountContainer = styled.div`
   display: flex;

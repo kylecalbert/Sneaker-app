@@ -8,6 +8,16 @@ export const IncrementorContainer = styled.div`
   width: 40%;
   border: none;
   border-radius: 0.5rem;
+  @media (max-width: 768px) {
+    height: 4rem;
+    width: 22rem;
+  }
+  @media (max-width: 667px) {
+    height: 3rem;
+    width: 14rem;
+    margin-top: 1rem;
+    margin-left: 0;
+  }
 `;
 
 export const Button = styled.button`
